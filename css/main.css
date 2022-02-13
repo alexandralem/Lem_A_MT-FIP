@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    background-color: #fff;
+}
+
+p {
+    line-height: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #ccc;
+}
+
+.hidden {
+    display: none;
+}
+
+
+#siteContainer {
+    margin: 0 auto;
+    width: 920px;
+}
+
