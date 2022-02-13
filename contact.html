@@ -7,12 +7,17 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="siteContainer">
         <h1 class="hidden">Old Spice Home Page</h1>
-        <header>
-            <div id="logo"></div>
+        <header id="header">
+            <div id="logo">
+                <img src="https://via.placeholder.com/250x80" alt="">
+            </div>
             <nav id="mainNav">
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
@@ -26,32 +31,60 @@
         </header>
         <section class="heroImg">
             <h2 class="hidden">Hero Image</h2>
-            <img src="" alt="Big promo image">
+            <img src="https://via.placeholder.com/960x400" alt="Big promo image">
         </section>
-        <section class="textImg">
-            <h2 class="hidden">Contact Information</h2>
-            <div>
-                <h2>Old Spice International Head Office</h2>
-                <p>
-                    OLd Spice Breweries A/S<br><br>
-                    J.C. Jacobsens Gade 1<br><br>
-                    1799 København V.<br><br>
-                    Denmark<br><br><br><br>
+        <section class="contactUs">
+            <h2 class="hidden">Contact Information of the company</h2>
 
-                    Phone: (+45) 3327 3300<br><br>
-                </p>
-            </div>
-            <div>
+            <section class="contactInfo">
+                    <h2>Contact Us<br><br>
+                        Old Spice International Head Office</h2>
+                    <p>
+                        OLd Spice Breweries A/S<br><br>
+                        J.C. Jacobsens Gade 1<br><br>
+                        1799 København V.<br><br>
+                        Denmark<br><br><br><br>
+    
+                        Phone: (+45) 3327 3300<br><br>
+                    </p>
+            </section>
+
+            <div class="contactPic">
                 <h2 class="hidden">Contact Section Image</h2>
-                <img src="" alt="Image of the office">
+                <img src="https://via.placeholder.com/350x350" alt="Image of the office">
             </div>
-        </section>
-        <footer>
-            <h2 class="hidden">Footer</h2>
-            <div id="footerNav"><p>Footer Nav</p></div>
-            <div id="copyRight"><p>Copyright Info</p></div>
-        </footer>
 
+        </section>
+        <section class="formContact">
+            <h2>Contact Us Form</h2>
+            <form action="email.php" method="POST" enctype="text/plain">
+            <input name="fullName" type="text" placeholder="First & Last Name">
+            <input name="contactInfo" type="text" required placeholder="Phone number or Email">
+            <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
+            <input name="submit" type="submit" value="Send">
+        </form>
+        </section>
+        <footer id="footer">
+            <section>
+            <h2 class="hidden">Footer</h2>
+            <nav id="footerNav">
+                <h2 class="hidden">Footer Nav 1</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Beers You Love</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h2 class="hidden">Footer Nav 2</h2>
+                <ul>
+                    <li><a href="#">News Room</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div id="copyRight"><p>Copyright Info</p></div>
+        </section>
+        </footer>
 
     </div>
     <script src="js/main.js"></script>  
