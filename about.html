@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb2dab820a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <main id="content" class="main">
@@ -20,6 +21,9 @@
             </div>
             <nav class="nav">
                 <h2 class="hidden">Main Navigation</h2>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul>
                     <li><a href="http://localhost:52330/index.html">HOME</a></li>
                     <li><a href="http://localhost:52330/about.html">ABOUT</a></li>
@@ -30,8 +34,16 @@
             </nav>
         </header>
     
-        <div class="hero">
-            <img src="images/promo1.jpg" alt="Promo Image">
+        <div class="container-hero">
+            <img src="images/beer.jpg" alt="Promo Image">
+            <div class="hotspot top" data-offset="0"></div>
+            <div class="hotspot middle" data-offset="1"></div>
+            <div class="hotspot bottom" data-offset="2"></div>
+            <div class="lightbox">
+                <a href="#" class="close">X</a>
+                <p class="brandInfo">
+                </p>
+            </div>
         </div>
         <section class="about">
             <div class="aboutText">
