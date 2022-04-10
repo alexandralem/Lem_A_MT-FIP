@@ -1,11 +1,17 @@
 (() => {
     let hotspot = document.querySelectorAll('.hotspot'),
         lightBox = document.querySelector('.lightbox'),
-        lbClose = lightBox.querySelector('.close')
-        brandInfo = document.querySelector('.brandInfo');
+        lbClose = lightBox.querySelector('.close'),
+        brandInfo = document.querySelector('.brandInfo'),
+        hamburger = document.querySelector('.hamburger'),
+        nav = document.querySelector('.nav');
 
     let currentText = '';
     
+    hamburger.addEventListener('click', () => {
+        nav.classList.toggle('show');
+    })
+
     const brandText = [
         `"Old Spice" has a unique refreshing scent. Jacobsen, the founder of Carlsberg, and William Shultz, the founder of the deodorants company 'Old Spice' invented this flavour together, so that people who drink it won't have to deal with the odour of alcohol afterwards. `,
 
