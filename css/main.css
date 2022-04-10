@@ -198,6 +198,18 @@ a:hover, a:active {
 .headingPro {
     margin: 30px auto;
 }
+.product h3 {
+    margin: 20px 0 10px;
+}
+
+.products h2 {
+    margin: 40px;
+}
+
+.product p {
+    margin-bottom: 20px;
+}
+
 
 
 
