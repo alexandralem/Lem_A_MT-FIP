@@ -1,14 +1,6 @@
-# Lem_A_MT-FIP# Old Spice Beer
+# Old Spice Beer
 
-TODO: Write a project description
-
-## Installation
-
-TODO: Describe the installation process
-
-## Usage
-
-TODO: Write usage instructions
+This brand is a combination of 2 different brands Carlsberg and Old Spice. The visuals of Carlsberg were maintained, while the Old Spice content was communicated.
 
 ## Contributing
 
@@ -20,12 +12,8 @@ TODO: Write usage instructions
 
 ## History
 
-TODO: Write history
+Old Spice is a deodorants company, Carlsberg is a beer brand. 
 
 ## Credits
 
-TODO: Write credits
-
-## License
-
-TODO: Write license
+Alexandra Lem
