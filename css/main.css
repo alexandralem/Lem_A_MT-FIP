@@ -48,6 +48,9 @@ a:hover, a:active {
 .header {
     background-color: #00321E;
     padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo img{
@@ -56,6 +59,24 @@ a:hover, a:active {
 
 .nav {
     display: none;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+.nav.show {
+    display: flex;
+    flex-direction: column;
 }
 
 .intro {
@@ -364,7 +385,7 @@ form { max-width:420px; margin:50px auto; }
 
 .feedback-input {
   font-family: 'Open Sans', sans-serif;
-  color:white;
+  color:#333;
   font-weight:500;
   font-size: 18px;
   border-radius: 5px;
@@ -416,6 +437,10 @@ textarea {
         grid-template-columns: repeat(12, 1fr);
         column-gap: 30px;
         max-width: 1170px;
+    }
+
+    .hamburger {
+        display: none;
     }
 
     .nav {
@@ -557,6 +582,11 @@ textarea {
         margin: auto;
     }
 
+    .paginationPro
+    {
+        display: none;
+    }
+
     /* News Page */
 
     .news {
@@ -605,7 +635,7 @@ textarea {
      }
 
      .pagination {
-         display: none;
+         grid-column: 5 / span 4;
      }
      
 
