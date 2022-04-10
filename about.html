@@ -4,89 +4,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>About Page</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cb2dab820a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="siteContainer">
-        <h1 class="hidden">Old Spice About Us Page</h1>
-        <header id="header">
-            <div id="logo">
-                <img src="https://via.placeholder.com/250x80" alt="">
+    <main id="content" class="main">
+        <h1 class="hidden">Old Spice About Page</h1>
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" class="logoImg">
             </div>
-            <nav id="mainNav">
+            <nav class="nav">
                 <h2 class="hidden">Main Navigation</h2>
+                <button class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Beers You Love</a></li>
-                    <li><a href="#">News Room</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="http://localhost:52330/index.html">HOME</a></li>
+                    <li><a href="http://localhost:52330/about.html">ABOUT</a></li>
+                    <li><a href="http://localhost:52330/products.html">BEERS YOU LOVE</a></li>
+                    <li><a href="http://localhost:52330/news.html">NEWS ROOM</a></li>
+                    <li><a href="http://localhost:52330/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="heroImg">
-            <h2 class="hidden">Hero Image</h2>
-            <img src="https://via.placeholder.com/960x400" alt="Big promo image">
-        </section>
-        <section id="aboutInfo">
-            <h2>About Us</h2>
-            <p>About Us Text</p>
-        </section>
-        <section id="postsSection">
-            <h2 class="hidden">Posts about Company's brewing technology</h2>
-
-            <div class="posts">
-                <img src="https://via.placeholder.com/290x270" alt="post image">
-                <h2>Post Name</h2>
-                <p>Post</p>
+    
+        <div class="container-hero">
+            <img src="images/beer.jpg" alt="Promo Image">
+            <div class="hotspot top" data-offset="0"></div>
+            <div class="hotspot middle" data-offset="1"></div>
+            <div class="hotspot bottom" data-offset="2"></div>
+            <div class="lightbox">
+                <a href="#" class="close">X</a>
+                <p class="brandInfo">
+                </p>
             </div>
+        </div>
+        <section class="about">
+            <div class="aboutText">
+                <h2>About Us</h2>
+                <p>
+                    In 1811, Jacob Christian Jacobsen, the founder of Old Spice, entered the world. When his father died in 1835, J.C. Jacobsen took over as a brewer. J.C. was born to brew. Driven by his passion for beer and an early interest in the natural sciences, J.C. Jacobsen set out on a lifelong journey to improve the quality of beer. His first stop is Bavaria where he studied the brewing techniques for a new beer at Gabriel Sedlmayr’s zum Spaten brewery in Munich. In the summer of 1845, carrying two pots of Spaten yeast in a customized hat box, J.C. returned to Denmark by stagecoach.
 
-            <div class="posts">
-                <img src="https://via.placeholder.com/290x270" alt="post image">
-                <h2>Post Name 2</h2>
-                <p>Post and Text 2</p>
-            </div>
-
-            <div class="postsLast">
-                <img src="https://via.placeholder.com/290x270" alt="post image">
-                <h2>Post Name 3</h2>
-                <p>Post and Text 3</p>
+                    On this long journey, he kept the yeast cool by stopping frequently and dousing it with cold water. J.C. Jacobsen’s first batches of lager were made in his mother’s copper wash basin. They were refined in his brewery until he got them just right.  This new lager needed a new brewery with larger cool storage space.
+                </p>
             </div>
         </section>
-        <section class="heroImg">
-            <h2 class="hidden">Hero Image</h2>
-            <img src="https://via.placeholder.com/960x400" alt="Big promo image">
+        <section class="postsAbout">
+            <h2 class="hidden">Posts about Company's news</h2>
+
+            <div class="post">
+                <img src="https://via.placeholder.com/370x350" alt="post image">
+                <h3>New Oxford Economics study confirms beer's significant global economic impact</h3>
+            </div>
+
+            <div class="post">
+                <img src="https://via.placeholder.com/370x350" alt="post image">
+                <h3>Old Spice Unique Brewing Technology</h3>
+            </div>
+
+            <div class="post">
+                <img src="https://via.placeholder.com/370x350" alt="post image">
+                <h3>Financial Statement of 2021</h3>
+            </div>
         </section>
-        <footer id="footer">
-            <section>
-            <h2 class="hidden">Footer</h2>
-            <nav id="footerNav">
-                <h2 class="hidden">Footer Nav 1</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Beers You Love</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <h2 class="hidden">Footer Nav 2</h2>
-                <ul>
-                    <li><a href="#">News Room</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div id="copyRight"><p>Copyright Info</p></div>
-        </section>
+        
+       <footer class="footer">
+            <section class="footerContainer">
+                <h2 class="hidden">Footer</h2>
+                <nav class="footerNavbar">
+                    <h2 class="hidden">Footer Navigation</h2>
+                    <a href="#" id="backBut">Back To Top</a>
+                    <ul id="footerNav">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BEERS YOU LOVE</a></li>
+                        <li><a href="#">NEWS ROOM</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div id="copyRight"><p>Copyright Info</p></div>
+            </section>
         </footer>
-
-
-
-    </div>
+    </main>
     <script src="js/main.js"></script>  
 </body>
 </html>

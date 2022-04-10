@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Contact Page</title>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,81 +12,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="siteContainer">
-        <h1 class="hidden">Old Spice Home Page</h1>
-        <header id="header">
-            <div id="logo">
-                <img src="https://via.placeholder.com/250x80" alt="">
+    <main id="content" class="main">
+        <h1 class="hidden">Old Spice Contact Page</h1>
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" class="logoImg">
             </div>
-            <nav id="mainNav">
+            <nav class="nav">
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Beers You Love</a></li>
-                    <li><a href="#">News Room</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="http://localhost:52330/index.html">HOME</a></li>
+                    <li><a href="http://localhost:52330/about.html">ABOUT</a></li>
+                    <li><a href="http://localhost:52330/products.html">BEERS YOU LOVE</a></li>
+                    <li><a href="http://localhost:52330/news.html">NEWS ROOM</a></li>
+                    <li><a href="http://localhost:52330/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="heroImg">
-            <h2 class="hidden">Hero Image</h2>
-            <img src="https://via.placeholder.com/960x400" alt="Big promo image">
-        </section>
-        <section class="contactUs">
-            <h2 class="hidden">Contact Information of the company</h2>
-
-            <section class="contactInfo">
-                    <h2>Contact Us<br><br>
-                        Old Spice International Head Office</h2>
-                    <p>
-                        OLd Spice Breweries A/S<br><br>
-                        J.C. Jacobsens Gade 1<br><br>
-                        1799 København V.<br><br>
-                        Denmark<br><br><br><br>
     
-                        Phone: (+45) 3327 3300<br><br>
-                    </p>
-            </section>
-
-            <div class="contactPic">
-                <h2 class="hidden">Contact Section Image</h2>
-                <img src="https://via.placeholder.com/350x350" alt="Image of the office">
+        <div class="hero">
+            <img src="images/promo1.jpg" alt="Promo Image">
+        </div>
+        <section class="intro">
+            <h2 class="hidden">Contact Form</h2>
+            <div class="introText">
+                <h2>Contact Us</h2>
             </div>
-
+            <div>
+                <h3 class="hidden">Contact Us Form</h3>
+                <form>      
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+                    <input type="submit" value="SUBMIT"/>
+                  </form>
+            </div>
         </section>
-        <section class="formContact">
-            <h2>Contact Us Form</h2>
-            <form action="email.php" method="POST" enctype="text/plain">
-            <input name="fullName" type="text" placeholder="First & Last Name">
-            <input name="contactInfo" type="text" required placeholder="Phone number or Email">
-            <textarea name="msg" placeholder="Enter your questions, comments or concerns here..."></textarea>
-            <input name="submit" type="submit" value="Send">
-        </form>
-        </section>
-        <footer id="footer">
-            <section>
-            <h2 class="hidden">Footer</h2>
-            <nav id="footerNav">
-                <h2 class="hidden">Footer Nav 1</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Beers You Love</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <h2 class="hidden">Footer Nav 2</h2>
-                <ul>
-                    <li><a href="#">News Room</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div id="copyRight"><p>Copyright Info</p></div>
-        </section>
+        
+        
+       <footer class="footer">
+            <section class="footerContainer">
+                <nav class="footerNavbar">
+                    <a href="#" id="backBut">Back To Top</a>
+                    <ul id="footerNav">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BEERS YOU LOVE</a></li>
+                        <li><a href="#">NEWS ROOM</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div id="copyRight"><p>Copyright Info</p></div>
+            </section>
         </footer>
-
-    </div>
+    </main>
     <script src="js/main.js"></script>  
 </body>
 </html>

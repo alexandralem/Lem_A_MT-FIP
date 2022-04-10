@@ -12,29 +12,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="siteContainer">
+    <main id="content" class="main">
         <h1 class="hidden">Old Spice Home Page</h1>
-        <header id="header">
-            <div id="logo">
-                <img src="https://via.placeholder.com/250x80" alt="">
+        <header class="header">
+            <div class="logo">
+                <img src="images/logo.svg" alt="logo" class="logoImg">
             </div>
-            <nav id="mainNav">
+            <nav class="nav">
                 <h2 class="hidden">Main Navigation</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Beers You Love</a></li>
-                    <li><a href="#">News Room</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="http://localhost:52330/index.html">HOME</a></li>
+                    <li><a href="http://localhost:52330/about.html">ABOUT</a></li>
+                    <li><a href="http://localhost:52330/products.html">BEERS YOU LOVE</a></li>
+                    <li><a href="http://localhost:52330/news.html">NEWS ROOM</a></li>
+                    <li><a href="http://localhost:52330/contact.html">CONTACT</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="heroImg">
-            <h2 class="hidden">Hero Image</h2>
-            <img src="https://via.placeholder.com/960x400" alt="Big promo image">
-        </section>
-        <section id="intro">
-            <h2 class="hidden">Welcoming Statement</h2>
+    
+        <div class="hero">
+            <img src="images/promo1.jpg" alt="Promo Image">
+        </div>
+        <section class="intro">
             <div class="introText">
                 <h2>Welcome to Old Spice Brewery!</h2>
                 <p>
@@ -43,52 +42,40 @@
                 </p>
             </div>
         </section>
-        <section class="textImg">
-            <h2 class="hidden">Statistics Data about Product's Popularity</h2>
-
-            <section class="text">
+        <section class="stats">
+            <div class="textHeading">
                 <h2>Old Spice has strong market positions globally</h2>
+            </div>
+            <div class="textMain">
                 <p>
                     We have a well-diversified geographic footprint with strong no. 1 or 2 positions in 25 markets across Western Europe, Asia and Eastern Europe. Around 75% of volumes are sold in these markets and no market accounts for more than 16% of Group volumes.
                 </p>
+            </div>
+            <div class="picture">
+                <img class="hop" src="images/hop.svg" alt="Hop Leaf">
+            </div>
+        </section>
+        <div class="hero">
+            <img src="images/promo1.jpg" alt="Promo Image">
+        </div>
+       <footer class="footer">
+            <section class="footerContainer">
+                <h2 class="hidden">Footer</h2>
+                <nav class="footerNavbar">
+                    <h2 class="hidden">Footer Navigation</h2>
+                    <a href="#" id="backBut">Back To Top</a>
+                    <ul id="footerNav">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">BEERS YOU LOVE</a></li>
+                        <li><a href="#">NEWS ROOM</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div id="copyRight"><p>Copyright Info</p></div>
             </section>
-
-            <section class="picture">
-                <h2 class="hidden">Beer Image</h2>
-                <img class="cloverRotation" src="images/carlsberg.png" alt="Beer Image">
-            </section>
-        </section>
-
-
-
-        <section class="heroImg">
-            <h2 class="hidden">Hero Image</h2>
-            <img src="https://via.placeholder.com/960x400" alt="Big promo image">
-        </section>
-        <footer id="footer">
-            <section>
-            <h2 class="hidden">Footer</h2>
-            <nav id="footerNav">
-                <h2 class="hidden">Footer Nav 1</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Beers You Love</a></li>
-                </ul>
-            </nav>
-            <nav>
-                <h2 class="hidden">Footer Nav 2</h2>
-                <ul>
-                    <li><a href="#">News Room</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </nav>
-            <div id="copyRight"><p>Copyright Info</p></div>
-        </section>
         </footer>
-
-
-    </div>
+    </main>
     <script src="js/main.js"></script>  
 </body>
 </html>
