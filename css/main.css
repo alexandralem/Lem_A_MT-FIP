@@ -75,7 +75,7 @@ a:hover, a:active {
 }
 
 .nav.show {
-    display: flex;
+    display: block;
     flex-direction: column;
 }
 

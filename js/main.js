@@ -6,7 +6,7 @@
         hamburger = document.querySelector('.hamburger'),
         nav = document.querySelector('.nav');
 
-    let currentText = '';
+
     
     hamburger.addEventListener('click', () => {
         nav.classList.toggle('show');
